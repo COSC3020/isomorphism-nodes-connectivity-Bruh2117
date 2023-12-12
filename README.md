@@ -13,13 +13,25 @@ one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,
 
 # Proof: 
 
-Since both graphs $A$ and $B$ have the same number of nodes, that means it's possible for an onto an one-to-one function to exist between them. 
+Suppose graphs $A = (V_1, E_1)$ and $B = (V_2, E_2)$ have the same number of nodes and are completely connected, meaning every vertex is connected to every other vertex in the graph. 
 
-This would be mean that each vertex in $A$ would be mapped to exactly one vertex in $B$, and vice versa.
+Now suppose we have a function $f: A \rightarrow B$, such that $\forall$ vertices $u \in V_1$ and $v \in V_2$: 
 
-And since they have the same number of nodes and are completely connected, meaning every vertex is connected to all other vertices, we can say that 
-they will have the same number of edges. 
+$f(u_1) = v_1$, 
 
-With that, every edge of each vertex of the graphs would also be mapped such that $(u,v)\in E_1$ iff $(f(u),f(v)) \in E_2$
+$f(u_2) = v_2$, 
 
-Thus, this satisfies for the graphs to be isomorphic by definiton, proving the theorem 
+...
+
+$f(u_n) = v_n$ 
+
+Where $n$ is the number of vertices in the graphs, which we noted are equivalent for both. 
+
+This means that $f$ is onto and one-to-one since each vertex in one graphs is mapped to exactly one in the other, making it a bijective function. 
+
+And since the graphs have the same number of nodes and are completely connected, that means that $A$ and $B$ have the same number of edges. 
+
+So with the function $f$, not only will each vertex correspond to exactly one in the other graphs, but so will all of the vertex's edges, meaning
+that every edge in one graph will correspond to exactly one edge in the other. 
+
+Thus, we have showed are isomorphic to each other by defintion
